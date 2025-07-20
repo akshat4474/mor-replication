@@ -28,6 +28,7 @@ This project is an unofficial implementation of Google DeepMind's Mixture-of-Rec
 
 ```bash
 pip install torch datasets transformers numpy tqdm pyyaml matplotlib tokenizers wandb
+```
 
 ---
 
