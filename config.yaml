@@ -1,0 +1,5 @@
+dataset:
+  name: tinystories       
+  max_length: 256
+  batch_size: 32
+  tokenizer_name: gpt2    
