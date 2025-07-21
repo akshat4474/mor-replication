@@ -37,17 +37,20 @@ pip install torch datasets transformers numpy tqdm pyyaml matplotlib tokenizers 
 ```bash
 mor-replication/
 │
-├── models/
-│   ├── mor_block.py
-│   ├── router.py
+├── main.py                      # Entry point for training or evaluation
+├── config.yaml                  # Configuration file for dataset, model, and training parameters
+├── requirements.md              # List of Python dependencies
 │
-├── training/
-│   ├── train.py
-│   ├── dataset.py
+├── data/                        # Local storage for cached datasets (e.g., TinyStories, WikiText-2)
+│   └── ...                      # Automatically populated by HuggingFace Datasets
 │
-├── utils/
-│   ├── masking.py
+├── models/                      # Model architecture components
+│   ├── mor_block.py             # Core Mixture-of-Recursions block definition
+│   ├── router.py                # Routing logic for dynamic module selection
 │
-├── main.py
-├── config.yaml
-└── requirements.md
+├── training/                    # Training and dataset preprocessing
+│   ├── train.py                 # Training loop and model optimization
+│   ├── dataset.py               # Dataset loading, tokenization, and DataLoader setup
+│
+├── utils/                       # Utility functions
+│   ├── masking.py               # Custom masking logic for attention

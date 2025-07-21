@@ -1,1 +1,5 @@
 .venv
+data/
+checklist.md
+__pycache__
+checkpoints
